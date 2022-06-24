@@ -1,5 +1,6 @@
 # Test work for Numbers
-Python skript for [document](https://docs.google.com/spreadsheets/d/1h_7txa8JYjEz_oQznGaMhvbkUBUXJqi3IpIVDA1WC9g/edit#gid=0) in Google sheets.
+- Python skript for [document](https://docs.google.com/spreadsheets/d/1h_7txa8JYjEz_oQznGaMhvbkUBUXJqi3IpIVDA1WC9g/edit#gid=0) in Google sheets.
+- [Text of tasks](https://soldigital.notion.site/soldigital/developer-5b79683045a64129a2625a19bfb0c944)
 
 ## Technology
 - [Python](https://www.python.org/)
@@ -11,8 +12,14 @@ Python skript for [document](https://docs.google.com/spreadsheets/d/1h_7txa8JYjE
 ```sh
 pip install requiremenst.txt
 ```
+2. Create db
+- Import db variable from app. After using the command to create a database
+```py
+from app import db
 
-2. Download the service_account.json file attached to the telegram message
+db.create_all()
+```
+
 
 ### Starting the Development server
 To start the development server, run the command:

@@ -3,7 +3,7 @@ from flask import Flask, render_template
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
-from reader import reader
+from Functions.reader import reader
 from Functions.converter import convert
 
 # Configurations
