@@ -7,14 +7,20 @@ Python skript for [document](https://docs.google.com/spreadsheets/d/1h_7txa8JYjE
 - [gspread](https://docs.gspread.org/en/latest/)
 
 ## Usage
-Install the used libraries into your virtualenv with the command:
+1. Install the used libraries into your virtualenv with the command:
 ```sh
 pip install requiremenst.txt
 ```
+
+2. Download the service_account.json file attached to the telegram message
 
 ### Starting the Development server
 To start the development server, run the command:
 ```sh
 python app.py runserver
 ```
+
+### Working with skript
+The server will be launched at [address](http://127.0.0.1:5000/).
+To test the functionality, add an element to the [table](https://docs.google.com/spreadsheets/d/1h_7txa8JYjEz_oQznGaMhvbkUBUXJqi3IpIVDA1WC9g/edit#gid=0).
 
