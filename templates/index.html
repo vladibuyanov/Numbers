@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-
+    {% for product in db_products%}
+        <div style="margin: 2%">
+            <div >{{ product.number }}. {{ product.number_of_order }}</div>
+            <div>
+                USD: {{ product.price_usd }} <br>
+                RUB: {{ product.price_rub }}
+            </div>
+            <div>{{ product.time }}</div>
+        </div>
+    {% endfor %}
 </body>
 </html>
