@@ -14,7 +14,6 @@ pip install requiremenst.txt
 ```
 2. Create db
 Import db variable from app. After using the command to create a database
-
 ```py
 from app import db
 
