@@ -1,5 +1,5 @@
 import gspread
-from config import credentials
+from app.config import credentials
 
 
 def reader():

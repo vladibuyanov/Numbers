@@ -3,12 +3,13 @@ from flask import Flask, render_template
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
-from Functions.reader import reader
-from Functions.converter import convert
+from .functions.reader import reader
+from .functions.converter import convert
 
 # Configurations
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
@@ -45,7 +46,3 @@ def main():
                 return 'Ops, something is going wrong'
     db_products = Product.query.all()
     return render_template('index.html', db_products=db_products)
-
-
-if __name__ == '__main__':
-    app.run()
